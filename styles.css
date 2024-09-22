@@ -1,0 +1,327 @@
+body {
+    font-family: "Times New Roman",Times,serif;
+    margin: 0;
+    min-height: 100%;
+    background-color: #432616;
+    color: #4b2e19;
+}
+
+
+.more h1{
+    font-family: 'Western', sans-serif;
+}
+
+#menu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+#menu i{
+    font-size: 30px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: burlywood;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: bisque;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 60px;
+}
+
+header {
+    background-image: url('woodtable.jpeg');
+    background-color: #432616;
+    box-shadow: 0 3000px rgba(155, 78, 0, 0.8) inset;
+    padding: 2px;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.headicons {
+    color: burlywood
+    font-size: 10px;
+    margin: 5px;
+    padding: 2px;
+    
+}
+.logo-icons i {
+    font-size: 20px;
+    
+}
+.logo-icons a {
+    font-size: 12px;
+}
+
+header .logo h1 {
+    font-family: 'Western', sans-serif;                                                               
+    font-size: 2.2rem;
+    margin: 30px;
+    color: #fff;
+}
+
+header .logo p,i {
+    font-size: 1rem;
+    color: #f3d19c;
+    animation: bounce;
+    
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul  {
+    margin: 5px 10px;
+    
+}
+i {
+    color: burlywood;
+    margin-right: 8px;
+    margin-left: 4px;
+    
+    
+}
+a{
+    color: burlywood;
+    text-decoration: none;
+}
+
+li {
+    display: inline;
+}
+
+
+nav ul {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.hero {
+    background: url('cowboy.jpg') no-repeat center center/cover;
+    background-attachment
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.hero-content h2 {
+  color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-top: -310px; /* Adjust this value to move the text up */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: -320px; /* Adjust this value to move the text up */
+}
+
+.hero-content button {
+    color: burlywood;
+    background-color: #432616;
+    border: 3px solid burlywood;
+    padding: 10px 20px;
+    cursor: pointer;
+    max-width: 130px;
+    font-size: 20px;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-content button, i{
+    font-size: 15px;
+    max-width: 130px;
+    
+    
+}
+section {
+  scroll-margin-top: 90px; /* Adjust based on your header height */
+}
+
+.section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f7f0e3;
+    border-bottom: 2px solid #8b4513;
+    
+}
+
+.section h3 {
+    font-family: 'Western', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.about-us-gallery img {
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px;
+}
+.restaurant-gallery img {
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}
+.garage-gallery img {
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}
+.service-gallery img {
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}
+.shop-gallery img {
+  border: 1px solid burlywood;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}
+
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+form {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #8b4513;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #d2691e;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    background: url('woodtable.jpeg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons {
+    display: block;
+    font-size: 25px;
+    margin: 0px
+}
+
+/* Responsive Design */
+/* Make sure all sections fit within the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding-top: 50px;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px; /* Adjust to ensure it fits with fixed header */
+}
+
+.section {
+    padding: 60px 20px;
+    min-height: calc(100vh - 120px); /* Ensure sections fill the remaining height of the viewport */
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+}
