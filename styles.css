@@ -5,7 +5,9 @@ body {
     background-color: #432616;
     color: #4b2e19;
 }
-
+html {
+  scroll-padding-top: 80px; /* Adjust this value to match the height of your fixed header */
+}
 
 .more h1{
     font-family: 'Western', sans-serif;
@@ -47,14 +49,17 @@ body {
   font-family: Verdana, sans-serif;
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 30px;
   color: burlywood;
   display: block;
   transition: 0.3s;
 }
+.overlay i{
+    font-size: 40px;
+}
 
 .overlay a:hover, .overlay a:focus {
-  color: bisque;
+  color: grey;
 }
 
 .overlay .closebtn {
@@ -74,18 +79,18 @@ header {
     top:0;
     left:0;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 .headicons {
     color: burlywood
     font-size: 10px;
     margin: 5px;
     padding: 2px;
-    
+
 }
 .logo-icons i {
     font-size: 20px;
-    
+
 }
 .logo-icons a {
     font-size: 12px;
@@ -102,8 +107,8 @@ header .logo p,i {
     font-size: 1rem;
     color: #f3d19c;
     animation: bounce;
-    
-    
+
+
 }
 
 nav ul {
@@ -116,14 +121,14 @@ nav ul {
 
 nav ul  {
     margin: 5px 10px;
-    
+
 }
 i {
     color: burlywood;
     margin-right: 8px;
     margin-left: 4px;
-    
-    
+
+
 }
 a{
     color: burlywood;
@@ -185,8 +190,8 @@ nav ul {
 .hero-content button, i{
     font-size: 15px;
     max-width: 130px;
-    
-    
+
+
 }
 section {
   scroll-margin-top: 90px; /* Adjust based on your header height */
@@ -197,7 +202,7 @@ section {
     text-align: center;
     background-color: #f7f0e3;
     border-bottom: 2px solid #8b4513;
-    
+
 }
 
 .section h3 {
@@ -318,11 +323,61 @@ html, body {
     box-sizing: border-box;
 }
 
-footer {
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    text-align: center;
+
+/* Mobile optimization for all devices */
+@media only screen and (max-width: 600px) {
+    body, html {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container, header, footer {
+        width: 100%;
+    }
+
+    nav ul {
+        display: block;
+        width: 100%;
+    }
+
+    .section {
+        width: 100%;
+        margin: 0;
+    }
+
+    button, input {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Larger mobile screens */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    .container {
+        width: 95%;
+    }
+
+    .section {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+/* Keyframes for sliding content animation */
+@keyframes slideInPage {
+  from { transform: translateX(100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Apply to the target page element */
+.section p{
+    animation: slideInPage 2.5s ease-out;
 }
